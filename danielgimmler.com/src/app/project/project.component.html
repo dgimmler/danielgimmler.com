@@ -1,0 +1,74 @@
+<div class="project" id="projects">
+    <div class="divider-line col-6 d-none d-lg-inline-block"></div>
+    <div class="divider-line col-6 d-lg-none"></div>
+
+    <h2 class="title col-12 d-lg-none">{{ title | uppercase }}</h2>
+    <h2 class="title col-8 d-none d-lg-inline-block">{{ title | uppercase }}</h2>
+
+    <div class="content d-none d-lg-inline-block col-lg-8">
+        <markdown [data]="body"></markdown>
+    </div>
+    <div class="content d-lg-none text-justify">
+        <markdown [data]="body"></markdown>
+    </div>
+
+    <div class="details d-none d-lg-inline-block col-lg-4">
+        <ul>
+            <li class="col-12">
+                <i class="fa fa-code"></i>
+                <div class="details-list-item">
+                    <h3>Technology Stack:</h3>
+                    <p>{{ technologies }}</p>
+                </div>
+            </li>
+            <li class="col-12">
+                <i class="fa fa-cogs"></i>
+                <div class="details-list-item">
+                    <h3>Check out the project:</h3>
+                    <a [href]="projectLink">
+                        <p>{{ projectLink }}</p>
+                    </a>
+                </div>
+            </li>
+            <!-- li class="col-12">
+                <i class="fa fa-github"></i>
+                <div class="details-list-item">
+                    <h3>See the backend:</h3>
+                    <a [href]="githubLink">
+                        <p>{{ githubLink }}</p>
+                    </a>
+                </div>
+            </li-->
+        </ul>
+    </div>
+
+    <div class="details d-lg-none col-lg-4">
+        <ul>
+            <li class="col-12">
+                <i class="fa fa-code"></i>
+                <div class="details-list-item">
+                    <h3>Technology Stack:</h3>
+                    <p>{{ technologies }}</p>
+                </div>
+            </li>
+            <li class="col-12">
+                <i class="fa fa-cogs"></i>
+                <div class="details-list-item">
+                    <h3>Check out the project:</h3>
+                    <a [href]="projectLink">
+                        <p>{{ projectLink }}</p>
+                    </a>
+                </div>
+            </li>
+            <!-- li class="col-12">
+                <i class="fa fa-github"></i>
+                <div class="details-list-item">
+                    <h3>See the backend:</h3>
+                    <a [href]="githubLink">
+                        <p>{{ githubLink }}</p>
+                    </a>
+                </div>
+            </li-->
+        </ul>
+    </div>
+</div>

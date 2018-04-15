@@ -1,0 +1,25 @@
+.projects {
+    /*background-color: #EAF7FF;*/
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    padding: 50px 30px;
+    position: relative;
+}
+
+.projects-container {
+    background: none;
+}
+
+.projects-container.d-md-none {
+    padding-left: 0;
+    margin-left: -20px;
+    max-width: 90vw;
+    display: inline-block;
+}
+
+.title {
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}

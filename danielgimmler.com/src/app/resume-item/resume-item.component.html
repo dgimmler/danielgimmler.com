@@ -1,0 +1,15 @@
+<div class="card col-12 d-lg-none" [style.backgroundColor]="color">
+    <div class="card-block">
+        <i class="fa fa-{{ icon }}"></i>
+        <h2 class="card-title">{{ title }}</h2>
+        <markdown class="card-text" [data]="body"></markdown>
+    </div>
+</div>
+
+<div class="card d-none d-lg-block" [style.backgroundColor]="color">
+    <div class="card-block">
+        <i class="fa fa-{{ icon }}"></i>
+        <h2 class="card-title">{{ title }}</h2>
+        <markdown class="card-text" [data]="body"></markdown>
+    </div>
+</div>

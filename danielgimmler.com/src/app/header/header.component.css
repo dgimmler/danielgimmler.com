@@ -1,0 +1,48 @@
+.header {
+    margin-top: -25px;
+    margin-bottom: -25px;
+    z-index: 10;
+    height: 75px;
+    width: 100%;
+    border-bottom: 1px dashed #4fb7f6;
+}
+
+.menu {
+    display: inline-block;
+    float: right;
+}
+
+h2, .fa {
+    position: relative;
+    top: 37px;
+    margin-left: 30px;
+    margin-right: 30px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 24px;
+    display: inline-block;
+}
+
+.fa {
+    float: right;
+}
+
+.menu app-menu {
+    display: none;
+}
+
+.menu:hover app-menu {
+    display: block;
+    position: absolute;
+    margin-right: -100px;
+}
+
+h2 {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+h2.d-none {
+    margin-left: 75px;
+    font-size: 20px;
+}

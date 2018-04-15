@@ -1,0 +1,26 @@
+<div class="footer section">
+    <div class="links col-12 text-center">
+        <a *ngFor="let link of content?.links" href="{{ link.fields.url }}" target="_blank">
+            <i class="fa fa-{{ link.fields.icon }}"></i>
+        </a>
+        <a (click)="scrollTo('contact',false)">
+            <i class="fa fa-envelope-o"></i>
+        </a>
+    </div>
+
+    <div class="copyright col-md-12 text-center d-none d-md-inline-block">
+        <i class="fa fa-copyright"></i>
+
+        <h3>{{ year + " " + content?.copyright?.name }}</h3>
+        <h3 class="d-none d-md-inline-block">|</h3>
+        <h3>{{ content?.copyright?.location }}</h3>
+    </div>
+
+    <div class="copyright col-12 text-center d-md-none">
+        <i class="fa fa-copyright"></i>
+
+        <h3>{{ year + " " + content?.copyright?.name }}</h3>
+        <h3 style="display: block;">{{ content?.copyright?.location }}</h3>
+    </div>
+
+</div>

@@ -1,0 +1,20 @@
+<div class="header section"
+    [style.position]="isFixed ? 'fixed' : 'relative'"
+    [@headerState]="headerState">
+
+    <h2 class="d-md-none"
+        [@mobileTitleState]="mobileTitleState"
+        (click)="scrollTo('home')">{{ title | uppercase }}</h2>
+
+    <div class="menu" (click)="toggleMenu()">
+        <span class="fa fa-bars d-md-none"></span>
+    </div>
+
+    <h2 class="d-none d-md-block"
+        [@titleState]="titleState"
+        (click)="scrollTo('home')">{{ title | uppercase }}</h2>
+
+    <app-menu
+        [showMobileMenu]="showMobileMenu"
+        [@menuState]="menuState"></app-menu>
+</div>

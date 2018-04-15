@@ -1,0 +1,72 @@
+<div class="menu d-none d-md-block"
+    (mouseenter)="setGreyoutDesktopState('visible')"
+    (mouseleave)="setGreyoutDesktopState('hidden')">
+    <ul>
+        <li (click)="scrollToTop()">
+            <h3>Home</h3>
+            <i class="fa fa-dot-circle-o"></i>
+            <i class="fa fa-circle"></i>
+        </li>
+        <li (click)="scrollTo('about-me',false)">
+            <h3>About Me</h3>
+            <i class="fa fa-dot-circle-o"></i>
+            <i class="fa fa-circle"></i>
+        </li>
+        <li (click)="scrollTo('resume',false)">
+            <h3>Resume</h3>
+            <i class="fa fa-dot-circle-o"></i>
+            <i class="fa fa-circle"></i>
+        </li>
+        <li (click)="scrollTo('projects',false)">
+            <h3>Projects</h3>
+            <i class="fa fa-dot-circle-o"></i>
+            <i class="fa fa-circle"></i>
+        </li>
+        <li (click)="scrollTo('contact',false)">
+            <h3>Get In Touch</h3>
+            <i class="fa fa-dot-circle-o"></i>
+            <i class="fa fa-circle"></i>
+        </li>
+    </ul>
+</div>
+
+<div class="menu mobile d-md-none"
+    [ngClass]="{
+        'toggle-on': showMobileMenu,
+        'toggle-off': !showMobileMenu
+    }">
+    <ul [@menuState]="menuState">
+        <li (click)="scrollToTop()">
+            <h3>Home</h3>
+            <i class="fa fa-dot-circle-o"></i>
+            <i class="fa fa-circle"></i>
+        </li>
+        <li (click)="scrollTo('about-me',true)">
+            <h3>About Me</h3>
+            <i class="fa fa-dot-circle-o"></i>
+            <i class="fa fa-circle"></i>
+        </li>
+        <li (click)="scrollTo('resume',true)">
+            <h3>Resume</h3>
+            <i class="fa fa-dot-circle-o"></i>
+            <i class="fa fa-circle"></i>
+        </li>
+        <li (click)="scrollTo('projects',true)">
+            <h3>Projects</h3>
+            <i class="fa fa-dot-circle-o"></i>
+            <i class="fa fa-circle"></i>
+        </li>
+        <li (click)="scrollTo('contact',true)">
+            <h3>Get In Touch</h3>
+            <i class="fa fa-dot-circle-o"></i>
+            <i class="fa fa-circle"></i>
+        </li>
+    </ul>
+</div>
+
+<div class="menu-grey-out d-md-none" [@greyOutState]="greyOutState" [ngClass]="{
+    'toggle-on': showMobileMenu,
+    'toggle-off': !showMobileMenu
+}" (click)="toggleMenu()"></div>
+
+<div class="menu-grey-out desktop" [@greyOutDesktopState]="greyOutDesktopState"></div>

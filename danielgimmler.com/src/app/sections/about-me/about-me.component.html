@@ -1,0 +1,24 @@
+<div class="about-me section" id="about-me">
+    <div class="content col-12 col-md-8 col-lg-5 ml-1 ml-md-5">
+        <h2 class="col-12 text-left">{{ content.title }}</h2>
+
+        <div class="body ml-3 mr-3">
+            <markdown [data]="content?.body"></markdown>
+        </div>
+    </div>
+
+    <div class="image col-12 col-md-8 col-lg-4 ml-0 ml-md-4">
+        <img src="../../../assets/my_face.png" />
+    </div>
+
+    <div class="app-buttons col-12 ml-1 ml-md-5 p-4">
+        <div class="app-button d-flex" (click)="scrollTo('contact')">
+            <h3 class="align-self-center">Get in touch</h3>
+        </div>
+        <div class="app-button d-flex" (click)="scrollTo('projects')">
+            <h3 class="align-self-center">Check out some projects</h3>
+        </div>
+    </div>
+
+    <div class="separator"></div>
+</div>

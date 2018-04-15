@@ -1,0 +1,78 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~font-awesome/css/font-awesome.min.css';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+
+h1, h2, p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+}
+
+h1, h2, p, .fa {
+    color: #333;
+}
+
+div {
+    background-color: #f9f9f9;
+}
+
+h1 {
+    /*font-size: 36px;*/
+    font-size: 54px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3,p {
+    font-size: 16px;
+}
+
+h4 {
+    font-size: 11px;
+}
+
+h5 {
+    font-size: 7px;
+}
+
+h6 {
+    font-size: 5px;
+}
+
+.section {
+    margin-top: -10px;
+    margin-bottom: -15px;
+}
+
+app-root {
+    padding: 0;
+}
+
+/* markdown styling needs to be loaded before the component */
+.card-text p {
+    color: #f9f9f9;
+    padding: 0px 30px 10px 30px;
+}
+
+.about-me-details p {
+    text-align: justify;
+    max-width: 100%;
+}
+
+.body markdown {
+    max-width: 100%;
+}
+
+.body markdown.d-md-none {
+    margin-left: -75px;
+}
+
+.body markdown.d-md-none, .body markdown.d-md-none p {
+    margin-right: 0;
+    padding-right: 0;
+}

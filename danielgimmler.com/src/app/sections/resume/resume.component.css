@@ -1,0 +1,76 @@
+.resume {
+    position: relative;
+    background-color: #20303D;
+    min-height: 100vh;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.divider-cloud {
+    position: absolute;
+    bottom: -100px;
+    left: -10px;
+    width: 50%;
+    height: 200px;
+    display: none;
+}
+
+.divider-cloud.right {
+    left: 40vw;
+    width: 65%;
+}
+
+.resume-link {
+    border-radius: 20px;
+    border: 2px solid #D56A74;
+    display: inline-block;
+    margin: 50px auto;
+    background: none;
+    color: #f9f9f9;
+    padding: 10px 50px 5px 50px;
+    cursor: pointer;
+}
+
+.resume-link h3 {
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: #f9f9f9;
+}
+
+.resume-link:hover h3 {
+    letter-spacing: 4px;
+    color: #ededed;
+}
+
+.resume-link a:hover {
+    text-decoration: none;
+}
+
+.card-group {
+    background: none;
+    display: table;
+    margin-bottom: 50px;
+}
+
+/* Clouds */
+#clouds path {
+	fill: $cloudColor;
+	stroke: $cloudColor;
+}
+
+.clouds {
+  background: none;
+  margin-bottom: -10px;
+}
+
+.clouds path {
+	fill: #EAF7FF;
+	stroke: #EAF7FF;
+}
+
+app-divider-link {
+    position: absolute;
+    bottom: 30px;
+    right: 50%;
+}

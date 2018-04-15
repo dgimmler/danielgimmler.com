@@ -1,0 +1,85 @@
+.about-me {
+    min-height: 110vh;
+    position: relative;
+    display: table;
+    padding-top: 50px;
+}
+
+.content {
+    display: table;
+    float: left;
+}
+
+h2 {
+    /*color: #459fed;*/
+    color: #4fb7f6;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.body {
+    margin-top: 35px;
+    display: inline-block;
+}
+
+.image {
+    padding: 50px;
+    display: inline-block;
+
+}
+
+img {
+    /*filter: grayscale(100%);*/
+    width: 100%;
+    border-radius: 20px;
+}
+
+.links-container {
+    clear: left;
+}
+
+.app-buttons {
+    clear: left;
+    margin-bottom: 50px;
+    height: 100px;
+    max-width: 80vw;
+}
+
+.app-button {
+    height: 50px;
+    width: 160px;
+    border-radius: 5px;
+    background: #4fb7f6;
+    margin-top: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    padding: 25px;
+    text-align: center;
+}
+
+.app-button h3 {
+    color: #f9f9f9;
+    margin: 0 auto;
+}
+
+.app-button:hover {
+    background-color: #459fed;
+}
+
+.separator {
+    height: 100px;
+    clear: left;
+    margin-top: 50px;
+}
+
+.separator::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-width: 0 0 100px 100vw;
+    border-style: solid;
+    border-color: #21313d #f9f9f9;
+}

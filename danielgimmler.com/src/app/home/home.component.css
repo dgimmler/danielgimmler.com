@@ -1,0 +1,38 @@
+.home {
+    height: calc(100vh - 70px);
+    background: none;
+    position: relative;
+    z-index: 1;
+}
+
+img {
+    display: none;
+    vertical-align: middle;
+    border-style: none;
+    max-height: 100%;
+    max-width: 100%;
+    /*filter: grayscale(100%);*/
+    float: right;
+    /*https://unsplash.com/photos/WJkc3xZjSXw*/
+}
+
+app-divider-link {
+    position: absolute;
+    bottom: 30px;
+    right: 50%;
+}
+
+.basic-info {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    bottom: 100px;
+    text-align: center;
+    background: none;
+}
+
+h2 {
+    color: #f9f9f9;
+    letter-spacing: 5px;
+    font-weight: 600;
+}

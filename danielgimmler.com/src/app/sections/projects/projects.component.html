@@ -1,0 +1,25 @@
+<div class="projects section" id="projects">
+    <h2 class="title col-12 text-center">Projects</h2>
+
+    <div class="projects-container col-md-9 d-none d-md-block">
+        <app-project *ngFor="let project of projects"
+            [title]="project?.fields?.name"
+            [body]="project?.fields?.description"
+            [technologies]="project?.fields?.technologies"
+            [projectLink]="project?.fields?.projectLink"
+            [githubLink]="project?.fields?.githubLink"
+        >
+        </app-project>
+    </div>
+
+    <div class="projects-container col-12 d-md-none">
+        <app-project *ngFor="let project of projects"
+            [title]="project?.fields?.name"
+            [body]="project?.fields?.description"
+            [technologies]="project?.fields?.technologies"
+            [projectLink]="project?.fields?.projectLink"
+            [githubLink]="project?.fields?.githubLink"
+        >
+        </app-project>
+    </div>
+</div>
