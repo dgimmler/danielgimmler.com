@@ -1,4 +1,4 @@
-var contentfulManagement = require('contentful-management');
+const contentfulManagement = require('contentful-management');
 
 const CONFIG = {
   space: '<space id>',
@@ -6,7 +6,7 @@ const CONFIG = {
 };
 
 
-var mgmtClient = contentfulManagement.createClient({
+const mgmtClient = contentfulManagement.createClient({
     accessToken: CONFIG.accessMgmtToken
 });
 
